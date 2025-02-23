@@ -7,12 +7,13 @@ export const getUserById = async (req, res) => {
     
         const {id} = req.params;
 
-        const user = await User.findById(id).populate('keeper', 'nameCourse');
+        const user = await User.findById(id);
 
         if(!user){
             return res.status(404).json({
                 succes: false,
-                msg: 'User not found'
+                msg: 'User not found',
+                error: error.message
             })
         }
 
@@ -24,7 +25,7 @@ export const getUserById = async (req, res) => {
         res.status(500).json({
             succes: false,
             msj: "Error getting user",
-            error
+            error: error.message
         })
     }
 }

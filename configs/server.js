@@ -37,7 +37,7 @@ export const conetarDB = async() => {
 
 export const initServer = async () => {
     const app = express();
-    const port = process.env.PORT || 3001;
+    const port = process.env.PORT || 3002;
 
     try {
         middlewares(app);
