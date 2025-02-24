@@ -1,5 +1,5 @@
-import { response, request } from "express";
-import {hash} from "argon2";
+import { response } from "express";
+import {hash, verify} from "argon2";
 import User from './user.model.js';
 
 export const getUserById = async (req, res) => {
@@ -16,7 +16,7 @@ export const getUserById = async (req, res) => {
                 error: error.message
             })
         }
-
+        
         res.status(200).json({
             succes: true,
             user
@@ -24,7 +24,7 @@ export const getUserById = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             succes: false,
-            msj: "Error getting user",
+            msj: 'Error getting user',
             error: error.message
         })
     }
@@ -50,75 +50,44 @@ export const updateUser = async (req, res  = response) => {
     } catch (error) {
         res.status(500).json({
             succes: false,
-            msj: "Error updating user",
-            error
+            msj: 'Error updating user',
+            error: error.message
         })
     }
 }
 
-
-export const asignarCurso = async (req, res) => {
+export const updatePassword = async (req, res) => {
     try {
-        const {id} = req.params;
-        const data = req.body;
+        const { id } = req.params;
+        const { passwordOld, passwordNew } = req.body;
+        const user = await User.findById(id);
 
-        const course = await Course.findOne({name: data.name});   
-
-        if(!course){
-            return res.status(404).json({
-                succes: false,
-                message: 'This course does not exist'
-            })
-        }
-
-        const updatedUser = await User.findByIdAndUpdate(id).populate('keeper', 'nameCourse' );
-
-        if (updatedUser.keeper.length >= 3) {
+        const validPassword = await verify(user.password, passwordOld);
+        if (!validPassword) {
             return res.status(400).json({
                 success: false,
-                message: 'The user cannot have more than 3 courses assigned'
+                msg: 'The current password is incorrect',
+                error: error.message
             });
-        }       
+        }
 
-        updatedUser.keeper.push([course._id]);
-        await updatedUser.save();
+        if(passwordNew){
+            const passwordUpdate = await hash(passwordNew)
+            await User.findByIdAndUpdate(id, { password: passwordUpdate });
+        };
+
 
         res.status(200).json({
             success: true,
-            message: 'Course assigned correctly',
-            user: updatedUser
+            msg: 'Password updating successfully',
+            error: error.message
         });
 
     } catch (error) {
         res.status(500).json({
-            succes: false,
-            msg: 'Error assigning course',
-            error
-        })
-    }
-}
-
-export const updatePassword = async (req, res = response) => {
-    try {
-        const {id} = req.params;
-        const {password} = req.body;
- 
-        if(password){
-            const passwordUpdate = await hash(password)
- 
-            await User.findByIdAndUpdate(id, { password: passwordUpdate });
-        };
- 
-        res.status(200).json({
-            succes: true,
-            msj: 'Contraseña actualizado con exito',
+            success: false,
+            msg: 'Failed to update password',
+            error: error.message
         });
- 
-    } catch (error) {
-        res.status(500).json({
-            succes: true,
-            msj: 'No se pudo actualizar la contraseña',
-            error
-        })
     }
-}
+};

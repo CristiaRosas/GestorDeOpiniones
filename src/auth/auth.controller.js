@@ -67,7 +67,6 @@ export const registerUser = async (req, res) => {
         return res.status(201).json({
             message: "User registered successfully",
             userDetails: {
-                name: data.name,
                 user: user.email,
             }
         })
@@ -80,3 +79,37 @@ export const registerUser = async (req, res) => {
         })
     }
 }
+
+const createUserAdmin = async ( name, surname, userame, email, password, role ) => {
+    try {
+
+    if (role === "ADMIN_ROLE") {
+        const existAdmin = await User.findOne({ role: "ADMIN_ROLE" });
+        if (existAdmin) {
+            console.log(" !!ERROR !!!");
+            console.log("A user with admin role already exists. Another cannot be created.")
+            return null;
+        };
+    };
+
+    const encryptedPassword = await hash(password);
+
+    const newUser = new User({ 
+        name, 
+        surname, 
+        userame, 
+        email, 
+        password: encryptedPassword, 
+        role });
+        
+        await newUser.save();
+        console.log("User created successfully:", newUser);
+        return newUser;
+        
+    } catch (error) {
+        console.error("Error creating user:", error);
+        return null;
+    }
+}
+
+createUserAdmin("Cristian", "Rosas", "Crosas","crosas@gmail.com", "12345678", "ADMIN_ROLE");

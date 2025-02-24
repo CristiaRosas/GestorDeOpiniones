@@ -25,10 +25,16 @@ const UserSchema = Schema({
         required: [true, 'Password required'],
         minLength: 8
     },
+    role: {
+        type: String,
+        required: true,
+        enum: ['ADMIN_ROLE', 'NORMAL_ROLE'],
+        default: 'NORMAL_ROLE'
+    },
     estado: {
         type: Boolean,
         default: true
-    },
+    }
 },
     {
         timestamps: true,

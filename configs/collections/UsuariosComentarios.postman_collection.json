@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "898d3af8-681e-4487-89ed-f57c36b72a19",
+		"name": "UsuariosComentarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37413747"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Peralta\",\r\n    \"surname\": \"Martinez\",\r\n    \"username\": \"Pepa\",\r\n    \"email\": \"Pepa@gmail.com\",\r\n    \"password\": \"12345678\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/auth/registerUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"auth",
+						"registerUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"crosas@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/gestorOpiniones/v1/users/BuscarUser/67bbdc072760f90bf71a7d3f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"gestorOpiniones",
+						"v1",
+						"users",
+						"BuscarUser",
+						"67bbdc072760f90bf71a7d3f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarContraseña",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passwordOld\": \"12345678\",\r\n    \"passwordNew\": \"87654321\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/gestorOpiniones/v1/users/passwordUpdate/67ba941561081dde24e6322a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"gestorOpiniones",
+						"v1",
+						"users",
+						"passwordUpdate",
+						"67ba941561081dde24e6322a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dylan\",\r\n    \"surname\": \"oxcal\",\r\n    \"username\": \"pelo\",\r\n    \"email\": \"pelio@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/users/67bbdc072760f90bf71a7d3f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"users",
+						"67bbdc072760f90bf71a7d3f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
