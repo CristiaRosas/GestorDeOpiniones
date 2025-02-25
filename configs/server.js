@@ -11,7 +11,9 @@ import  { dbConnection } from './mongo.js';
 
 import authRoutes from '../src/auth/auth.routes.js';
 import userRoutes from '../src/user/user.routes.js';
-import publicationRoutes from '../src/publicaciones/publications.routes.js';
+import publicationRoutes from '../src/publications/publications.routes.js';
+import categoryRoutes from '../src/category/category.routes.js';
+import commentsRoutes from '../src/comments/comments.routes.js'
 
 const middlewares = (app) => {
     app.use(express.urlencoded({extended : false}));
@@ -25,7 +27,10 @@ const middlewares = (app) => {
 const routes = (app) => {
     app.use('/GestorOpiniones/v1/auth', authRoutes);
     app.use('/GestorOpiniones/v1/users', userRoutes);
-    app.use("/GestorOpiniones/v1/publicationRoutes", publicationRoutes )
+    app.use("/GestorOpiniones/v1/publicationRoutes", publicationRoutes );
+    app.use("/GestorOpiniones/v1/category", categoryRoutes);
+    app.use("/GestorOpiniones/v1/publications", publicationRoutes);
+    app.use("/GestorOpiniones/v1/comments", commentsRoutes);
 };
 
 export const conetarDB = async() => {

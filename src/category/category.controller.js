@@ -8,7 +8,7 @@ const createCategory = async ( nameCategory, descriptionCategory, state) => {
         if (nameCategory === "Noticias") {
                 const existCategory = await Category.findOne({ nameCategory: "Noticias" });
                 if (existCategory) {
-                    console.log(`The named category ${nameCategory} already exists!!!!. New one cannot be created.`);
+                    console.log(`The named category ${nameCategory} already exists. New one cannot be created.`);
                     return null;
                 };
             };
