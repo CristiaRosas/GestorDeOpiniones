@@ -1,5 +1,5 @@
 import { response } from "express";
-//import Category from '../category/category.model.js';
+import Category from '../category/category.model.js';
 import User from '../user/user.model.js';
 import Publication from './publications.model.js'
 
