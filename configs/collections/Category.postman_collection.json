@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "90ca5aad-333b-4263-991a-5d0fd24221ef",
+		"name": "Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37413747"
+	},
+	"item": [
+		{
+			"name": "addCategory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNDQwODExNGU2NjhkMzBmYTEwM2EiLCJpYXQiOjE3NDA1MjUwNDIsImV4cCI6MTc0MDUyODY0Mn0.dD0bE27zcncv6HXT8LtOXbO17aoN3o_GNqav9zHgc2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameCategory\": \"Tecnologia\",\r\n    \"descriptionCategory\": \"Es una categoria sobre Tecnologia\",\r\n    \"email\": \"mandril@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/category/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoryView",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/category/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCategory",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNGZiYzYyNGNiZDQ1YTEwNzE4MmEiLCJpYXQiOjE3NDAyOTIyODUsImV4cCI6MTc0MDI5NTg4NX0.kqvhD4_Z2EXXO81AGbEhG4t3M-NPlTw4pfCIuf66pTU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/category/67ba5432e9797dd3a27f5824",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"category",
+						"67ba5432e9797dd3a27f5824"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCategory",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNDQwODExNGU2NjhkMzBmYTEwM2EiLCJpYXQiOjE3NDA1MjUwNDIsImV4cCI6MTc0MDUyODY0Mn0.dD0bE27zcncv6HXT8LtOXbO17aoN3o_GNqav9zHgc2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameCategory\": \"Ultima hora\",\r\n    \"descriptionCategory\": \"Se suben las noticias que acaban de suceder\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/category/67ba3c3d0c14238c7ba0167f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"category",
+						"67ba3c3d0c14238c7ba0167f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

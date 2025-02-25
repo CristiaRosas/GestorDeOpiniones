@@ -55,5 +55,7 @@ export const initServer = async () => {
     } catch (error) {
         console.log(`Server init failed ${error}`)
     }
-}
+};
+
+
 

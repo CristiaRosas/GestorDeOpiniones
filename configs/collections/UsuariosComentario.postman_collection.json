@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Peralta\",\r\n    \"surname\": \"Martinez\",\r\n    \"username\": \"Pepa\",\r\n    \"email\": \"Pepa@gmail.com\",\r\n    \"password\": \"12345678\"\r\n\r\n}",
+					"raw": "{\r\n    \"name\": \"Jose\",\r\n    \"surname\": \"Aguilar\",\r\n    \"username\": \"mandril\",\r\n    \"email\": \"mandril@gmail.com\",\r\n    \"password\": \"12345678\"\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -69,23 +69,33 @@
 			"response": []
 		},
 		{
-			"name": "BuscarPorId",
+			"name": "Buscar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:3002/gestorOpiniones/v1/users/BuscarUser/67bbdc072760f90bf71a7d3f",
+					"raw": "http://localhost:3002/GestorOpiniones/v1/users",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3002",
 					"path": [
-						"gestorOpiniones",
+						"GestorOpiniones",
 						"v1",
-						"users",
-						"BuscarUser",
-						"67bbdc072760f90bf71a7d3f"
+						"users"
 					]
 				}
 			},

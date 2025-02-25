@@ -1,6 +1,7 @@
 import { response } from "express";
 import Category from './category.model.js';
-import User from '../user/user.model.js'
+import User from '../user/user.model.js';
+import Publication from '../publications/publications.model.js'
 
 const createCategory = async ( nameCategory, descriptionCategory, state) => {
     try {
@@ -28,7 +29,7 @@ const createCategory = async ( nameCategory, descriptionCategory, state) => {
     }
 };
 
-createCategory("Noticias", "Es un apartado para opinar sobre noticias nacionales", true);
+createCategory("Tecnologia", "Donde se comparte las ultimas actualizaciones sobre cosas tecnologicas", true);
 
 export const addCategory = async (req, res) => {
     try {
@@ -72,9 +73,8 @@ export const categoryView = async (req, res) => {
 
     try {
         
-
         const category = await Category.find(query)
-            .populate('keeper', 'email')
+            .populate({path: 'keeper', match: { status: true }, select: 'email' })
             .skip(Number(desde))
             .limit(Number(limite));
 

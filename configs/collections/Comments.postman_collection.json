@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "be795d0b-855e-42c2-a2a2-efbbbe33bce0",
+		"name": "Comments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37413747"
+	},
+	"item": [
+		{
+			"name": "addComments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNDljNzc0OGMxODFkODJiYmMyYWUiLCJpYXQiOjE3NDAyODg2NDEsImV4cCI6MTc0MDI5MjI0MX0.yA8VUvOo89cgEJb8N7EafuGPXI7wWqEoidVxppfzxfs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"namePublication\": \"Barcelona primero\",\r\n    \"comment\": \"opino que es muy buen equipo y opta a ganar todo\",\r\n    \"email\": \"crosas@kinal.edu.gt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/comments/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commentsView",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/comments/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteComment",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNGZiYzYyNGNiZDQ1YTEwNzE4MmEiLCJpYXQiOjE3NDAyOTEyMzIsImV4cCI6MTc0MDI5NDgzMn0.eTDkIthl-tOnkxoW1XF7vtucnFqurntSOWy_AQ4F-II",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/comments/67bab5bb052102b351227687",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"comments",
+						"67bab5bb052102b351227687"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateComment",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNDljNzc0OGMxODFkODJiYmMyYWUiLCJpYXQiOjE3NDAyOTIyMDksImV4cCI6MTc0MDI5NTgwOX0.PQoIoFldNA0gnEzHSQhYZniU6MDGiSYm7RAz_DdX3jc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"comment\": \"Opino que el barcelona muy buen equipo y opta para ganar todo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/comments/67bab5bb052102b351227687",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"comments",
+						"67bab5bb052102b351227687"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

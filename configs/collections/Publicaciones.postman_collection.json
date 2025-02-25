@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "03c71888-437b-4d0a-a317-02fb4b02c47d",
+		"name": "Publicaciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37413747"
+	},
+	"item": [
+		{
+			"name": "AddPublications",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNDQwODExNGU2NjhkMzBmYTEwM2EiLCJpYXQiOjE3NDA1MjU0ODMsImV4cCI6MTc0MDUyOTA4M30.DLuI52kipn2CQTKkzBLoKAUOQO9T86y-42MguDUYuIo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameCategory\": \"Deportes\",\r\n    \"namePublication\": \"Arabbasaya\",\r\n    \"descriptionPublication\": \"clasico de los rojos\",\r\n    \"email\": \"mandril@gmail.com\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/publications/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"publications",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "publicationsView",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/publications/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"publications",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePublication",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNDljNzc0OGMxODFkODJiYmMyYWUiLCJpYXQiOjE3NDAyOTIzNjUsImV4cCI6MTc0MDI5NTk2NX0.38uOz3SYCVXn28kmkODnrCrjnKUw33GC_guR7JVKmXw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/publications/67ba6a41ab0903e4c0f6d512",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"publications",
+						"67ba6a41ab0903e4c0f6d512"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePuublication",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNDljNzc0OGMxODFkODJiYmMyYWUiLCJpYXQiOjE3NDAyODUwNDgsImV4cCI6MTc0MDI4ODY0OH0.Ce3jOg9jPrmoxIvOu0O2xZ8IIfEybb7IxJzf7Mza2nA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameCategory\": \"Deportes\",\r\n    \"namePublication\": \"Domingo merengue\",\r\n    \"descriptionPublication\": \"El madrid tiene que ganar su partido para mantenerse en la pelea por el liderato de la liga\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/GestorOpiniones/v1/publications/67ba9f9e85af83f46c63d97c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"GestorOpiniones",
+						"v1",
+						"publications",
+						"67ba9f9e85af83f46c63d97c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
