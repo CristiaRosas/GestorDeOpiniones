@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 export const dbConnection = async () => {
     try{
         mongoose.connection.on('error', ()=>{
-            console.log('MongoDB | could not be connected to MongoDB');
+            console.log(' MongoDB | could not be connected to MongoDB ');
             mongoose.disconnec();
         });
         mongoose.connection.on('connecting', ()=>{
