@@ -11,10 +11,12 @@ const router = Router();
 router.post(
     "/",
     [
+
         validarJWT,
         tieneRole('ADMIN_ROLE'),
-        check('email', 'This is not a valid email').not().isEmpty(),
+        check('email', 'Este no es un correo válido').not().isEmpty(),
         validarCampos
+
     ],
     addCategory
 )
@@ -24,10 +26,12 @@ router.get("/", categoryView)
 router.delete(
     "/:id",
     [
+
         validarJWT,
         tieneRole("ADMIN_ROLE"),
-        check("id", "It is not a valid id").isMongoId(),
-        validarCampos         
+        check("id", "No es un ID válido").isMongoId(),
+        validarCampos      
+
     ],
     deleteCategory
 )
@@ -35,10 +39,12 @@ router.delete(
 router.put(
     "/:id",
     [
+
         validarJWT,
         tieneRole("ADMIN_ROLE"),
-        check("id", "It is not a valid id").isMongoId(),
+        check("id", "No es un ID válido").isMongoId(),
         validarCampos
+        
     ],
     updateCategory
 )

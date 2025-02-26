@@ -7,16 +7,19 @@ const CommentsSchema = Schema({
         ref: 'Publication',
         required: true
     },
+
     comment: {
         type: String,
         required: true,
         maxLength: [200, 'Cant be overcome 100 characters']
     },
+
     keeperUser: {
         type: Schema.Types.ObjectId,
         ref: 'User',
         required: true
     },
+    
     state: {
         type: Boolean,
         default: true,

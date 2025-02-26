@@ -20,7 +20,6 @@ router.post(
 
 router.get("/", commentsView);
 
-
 router.delete(
     "/:id",
     [
@@ -31,7 +30,6 @@ router.delete(
     deleteComment
 );
 
-
 router.put(
     "/:id",
     [
@@ -41,7 +39,5 @@ router.put(
     ],
     updateComment
 );
-
-    
 
 export default router;

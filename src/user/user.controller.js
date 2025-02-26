@@ -22,7 +22,7 @@ export const getUsers = async (req = request, res = response) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: "Error getting user",
+            message: "Error al obtener el usuario",
             error
         });
     }
@@ -38,7 +38,7 @@ export const getUserById = async (req, res) => {
         if(!user){
             return res.status(404).json({
                 succes: false,
-                msg: 'User not found',
+                msg: 'Usuario no encontrado',
                 error: error.message
             })
         }
@@ -50,7 +50,7 @@ export const getUserById = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             succes: false,
-            msj: 'Error getting user',
+            msj: 'Error al obtener el usuario',
             error: error.message
         })
     }
@@ -70,13 +70,13 @@ export const updateUser = async (req, res  = response) => {
 
         res.status(200).json({
             succes: true,
-            msj: 'User updated successfully',
+            msj: 'Usuario actualizado con éxito',
             user
         })
     } catch (error) {
         res.status(500).json({
             succes: false,
-            msj: 'Error updating user',
+            msj: 'Error al actualizar el usuario',
             error: error.message
         })
     }
@@ -92,7 +92,7 @@ export const passwordUpdate = async (req, res) => {
         if (!validPassword) {
             return res.status(400).json({
                 success: false,
-                msg: 'The current password is incorrect',
+                msg: 'La contraseña actual es incorrecta',
                 error: error.message
             });
         }
@@ -105,14 +105,14 @@ export const passwordUpdate = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            msg: 'Password updating successfully',
+            msg: 'La contraseña se actualizó correctamente',
             error: error.message
         });
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Failed to update password',
+            msg: 'No se pudo actualizar la contraseña',
             error: error.message
         });
     }

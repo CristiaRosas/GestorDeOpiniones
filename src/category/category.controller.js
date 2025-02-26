@@ -49,23 +49,24 @@ export const categoryView = async (req, res) => {
     .limit(Number(limite));
 
 
-        const total = await Category.countDocuments(query);
+    const total = await Category.countDocuments(query);
 
-        res.status(200).json({ succes: true, total, category });
+    res.status(200).json({ succes: true, total, category });
     } catch (error) {
-        res.status(500).json({ succes: false, msg: 'Error getting categories', error: error.message });
+        res.status(500).json({ succes: false, msg: 'Error al obtener las categorías', error: error.message });
     }
-};
-
-export const deleteCategory = async (req, res) => {
+    };
+    
+    export const deleteCategory = async (req, res) => {
     const { id } = req.params;
     try {
         await Category.findByIdAndUpdate(id, { state: false });
-        res.status(200).json({ succes: true, message: 'Category deleted' });
+        res.status(200).json({ succes: true, message: 'Categoría eliminada' });
     } catch (error) {
-        res.status(500).json({ succes: false, msg: 'Error deleting category', error: error.message });
+        res.status(500).json({ succes: false, msg: 'Error al eliminar la categoría', error: error.message });
     }
-};
+    };
+    
 
 export const updateCategory = async (req, res  = response) => {
     try {

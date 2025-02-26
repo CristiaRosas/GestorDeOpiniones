@@ -3,34 +3,40 @@ import {Schema, model} from "mongoose";
 const UserSchema = Schema({
     name : {
         type: String,
-        required: [true, 'Username required'],
-        maxLength: [25, 'Cant be overcome 25 characters']
+        required: [true, 'Se requiere nombre de usuario'],
+        maxLength: [25, 'No se pueden superar los 25 caracteres.']
     },
+
     surname : {
         type: String,
-        required: [true, 'Last name required'],
-        maxLength: [25, 'Cant be overcome 25 characters']
+        required: [true, 'Apellido requerido'],
+        maxLength: [25, 'No se pueden superar los 25 caracteres.']
     },
+
     username : {
         type: String,
         unique: true
     },
+
     email: {
         type: String,
-        required: [true, 'Email required'],
+        required: [true, 'Se requiere correo electrónico'],
         unique: true
     },
+
     password: {
         type: String,
-        required: [true, 'Password required'],
+        required: [true, 'Se requiere contraseña'],
         minLength: 8
     },
+
     role: {
         type: String,
         required: true,
         enum: ['ADMIN_ROLE', 'USER_ROLE'],
         default: 'USER_ROLE'
     },
+
     estado: {
         type: Boolean,
         default: true

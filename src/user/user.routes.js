@@ -4,16 +4,14 @@ import { updateUser, passwordUpdate, getUserById, getUsers} from './user.control
 import {existeUsuarioById} from '../helpers/db.validator.js';
 import {validarCampos} from '../middlewares/validar-campos.js';
 
-
 const router = Router();
-
 
 router.get("/", getUsers);
 
 router.get(
     "/BuscarUser/:id",
     [
-        check("id", "It is not a valid Id").isMongoId(),
+        check("id", "No es un id válido").isMongoId(),
         check("id").custom(existeUsuarioById),
         validarCampos
     ],
@@ -23,24 +21,21 @@ router.get(
 router.put(
     "/:id",
     [
-        check("id", "It is Not a valid Id").isMongoId(),
+        check("id", "No es valido el Id").isMongoId(),
         check("id").custom(existeUsuarioById),
         validarCampos
     ],
     updateUser
 )
 
-
-
 router.put(
     "/passwordUpdate/:id",
     [
-        check("id", "It is not a valid Id").isMongoId(),
+        check("id", "No es un id válido").isMongoId(),
         check("id").custom(existeUsuarioById),
         validarCampos
     ],
     passwordUpdate
 ) 
-
 
 export default router;
