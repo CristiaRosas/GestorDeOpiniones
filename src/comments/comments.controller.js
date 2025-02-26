@@ -8,7 +8,7 @@ export const addComment = async (req, res) => {
         
         const data = req.body;
 
-        const plubication = await Publication.findOne({namePublication: data.namePublication});
+        const plublication = await Publication.findOne({namePublication: data.namePublication});
         const user = await User.findOne({email: data.email});   
 
         if(!user){
@@ -17,7 +17,7 @@ export const addComment = async (req, res) => {
                 message: 'User not found',
                 error: error.message
             })
-        }if(!plubication){
+        }if(!plublication){
             return res.status(404).json({
                 succes: false,
                 message: 'plubication not found',
@@ -25,15 +25,18 @@ export const addComment = async (req, res) => {
             })
         }
 
-        const comment = new Comment({
-            keeperPublication: plubication._id,
-            ...data,
+        const comment = await Comment.create({
+            keeperPublication: plublication._id,
+            comment: data.comment,
             keeperUser: user._id,
-        });
+        })
 
-        await comment.save();
+        await Publication.findByIdAndUpdate(plublication._id, {
+            $push: { keeperComment: comment._id}
+        })
 
         res.status(200).json({
+            message: "Comment registered succesfully",
             succes: true,
             comment
         });

@@ -13,13 +13,13 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNDQwODExNGU2NjhkMzBmYTEwM2EiLCJpYXQiOjE3NDA1MjUwNDIsImV4cCI6MTc0MDUyODY0Mn0.dD0bE27zcncv6HXT8LtOXbO17aoN3o_GNqav9zHgc2Y",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNjUxMTU0NDA0NDM4ZGMzNmRiMGYiLCJpYXQiOjE3NDA1MzEwNDQsImV4cCI6MTc0MDUzNDY0NH0.bpr1Ame6WmrxBeSYGld7rBBZ-VmyflxBbqfUUKuXAo4",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nameCategory\": \"Tecnologia\",\r\n    \"descriptionCategory\": \"Es una categoria sobre Tecnologia\",\r\n    \"email\": \"mandril@gmail.com\"\r\n}",
+					"raw": "{\r\n    \"nameCategory\": \"Ultima hora\",\r\n    \"descriptionCategory\": \"Es una categoria sobre Ultima Hora\",\r\n    \"email\": \"pepa@gmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -78,12 +78,12 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNGZiYzYyNGNiZDQ1YTEwNzE4MmEiLCJpYXQiOjE3NDAyOTIyODUsImV4cCI6MTc0MDI5NTg4NX0.kqvhD4_Z2EXXO81AGbEhG4t3M-NPlTw4pfCIuf66pTU",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNjUxMTU0NDA0NDM4ZGMzNmRiMGYiLCJpYXQiOjE3NDA1MzE0NTgsImV4cCI6MTc0MDUzNTA1OH0.rVc0Xiimz9hcaMMmhlVjsYEzROWSEolm2oXVTNxV1S4",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/GestorOpiniones/v1/category/67ba5432e9797dd3a27f5824",
+					"raw": "http://localhost:3002/GestorOpiniones/v1/category/67be66ef21f532af46bd01b9",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -93,7 +93,7 @@
 						"GestorOpiniones",
 						"v1",
 						"category",
-						"67ba5432e9797dd3a27f5824"
+						"67be66ef21f532af46bd01b9"
 					],
 					"query": [
 						{
@@ -113,13 +113,13 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNDQwODExNGU2NjhkMzBmYTEwM2EiLCJpYXQiOjE3NDA1MjUwNDIsImV4cCI6MTc0MDUyODY0Mn0.dD0bE27zcncv6HXT8LtOXbO17aoN3o_GNqav9zHgc2Y",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNjUxMTU0NDA0NDM4ZGMzNmRiMGYiLCJpYXQiOjE3NDA1MzE0NTgsImV4cCI6MTc0MDUzNTA1OH0.rVc0Xiimz9hcaMMmhlVjsYEzROWSEolm2oXVTNxV1S4",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nameCategory\": \"Ultima hora\",\r\n    \"descriptionCategory\": \"Se suben las noticias que acaban de suceder\"\r\n}",
+					"raw": "{\r\n    \"nameCategory\": \"Clima\",\r\n    \"descriptionCategory\": \"Es una categoria sobre climas\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -127,7 +127,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/GestorOpiniones/v1/category/67ba3c3d0c14238c7ba0167f",
+					"raw": "http://localhost:3002/GestorOpiniones/v1/category/67be66ef21f532af46bd01b9",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -137,7 +137,7 @@
 						"GestorOpiniones",
 						"v1",
 						"category",
-						"67ba3c3d0c14238c7ba0167f"
+						"67be66ef21f532af46bd01b9"
 					]
 				}
 			},

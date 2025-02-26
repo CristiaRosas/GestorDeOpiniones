@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "67be6b615b9ec23a713ce5e6"
+  },
+  "keeperCategory": {
+    "$oid": "67be65cc54404438dc36db26"
+  },
+  "namePublication": "burla de samsung",
+  "descriptionPublication": "disminucion de calidad",
+  "keeperUser": {
+    "$oid": "67be655854404438dc36db13"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-26T01:16:17.953Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:25:36.666Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be6bbc5b9ec23a713ce5ee"
+  },
+  "keeperCategory": {
+    "$oid": "67be66b621f532af46bd01b2"
+  },
+  "namePublication": "clasico",
+  "descriptionPublication": "el mejor partido de todo el domingo",
+  "keeperUser": {
+    "$oid": "67be663121f532af46bd01a6"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-26T01:17:48.826Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:27:11.363Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be6c2d5b9ec23a713ce5fb"
+  },
+  "keeperCategory": {
+    "$oid": "67be66ef21f532af46bd01b9"
+  },
+  "namePublication": "posible huracan",
+  "descriptionPublication": "huracan ana golpea las costas de la capital",
+  "keeperUser": {
+    "$oid": "67be659f54404438dc36db1c"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-26T01:19:41.128Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:30:34.823Z"
+  }
+}]

@@ -13,13 +13,13 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNDQwODExNGU2NjhkMzBmYTEwM2EiLCJpYXQiOjE3NDA1MjU0ODMsImV4cCI6MTc0MDUyOTA4M30.DLuI52kipn2CQTKkzBLoKAUOQO9T86y-42MguDUYuIo",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNjUxMTU0NDA0NDM4ZGMzNmRiMGYiLCJpYXQiOjE3NDA1MzE0NTgsImV4cCI6MTc0MDUzNTA1OH0.rVc0Xiimz9hcaMMmhlVjsYEzROWSEolm2oXVTNxV1S4",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nameCategory\": \"Deportes\",\r\n    \"namePublication\": \"Arabbasaya\",\r\n    \"descriptionPublication\": \"clasico de los rojos\",\r\n    \"email\": \"mandril@gmail.com\"\r\n}\r\n\r\n",
+					"raw": "{\r\n    \"nameCategory\": \"Clima\",\r\n    \"namePublication\": \"posible huracan\",\r\n    \"descriptionPublication\": \"huracan ana golpea las costas de la\",\r\n    \"email\": \"pepa@gmail.com\"\r\n}\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -72,12 +72,12 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNDljNzc0OGMxODFkODJiYmMyYWUiLCJpYXQiOjE3NDAyOTIzNjUsImV4cCI6MTc0MDI5NTk2NX0.38uOz3SYCVXn28kmkODnrCrjnKUw33GC_guR7JVKmXw",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNjYzMTIxZjUzMmFmNDZiZDAxYTYiLCJpYXQiOjE3NDA1MzI4ODYsImV4cCI6MTc0MDUzNjQ4Nn0.vPOweKSL3MUGfDFM5tG5bCl2UWnzO8zOK08J8UiiASo",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3002/GestorOpiniones/v1/publications/67ba6a41ab0903e4c0f6d512",
+					"raw": "http://localhost:3002/GestorOpiniones/v1/publications/67be6bbc5b9ec23a713ce5ee",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -87,7 +87,7 @@
 						"GestorOpiniones",
 						"v1",
 						"publications",
-						"67ba6a41ab0903e4c0f6d512"
+						"67be6bbc5b9ec23a713ce5ee"
 					]
 				}
 			},
@@ -100,13 +100,13 @@
 				"header": [
 					{
 						"key": "x-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNDljNzc0OGMxODFkODJiYmMyYWUiLCJpYXQiOjE3NDAyODUwNDgsImV4cCI6MTc0MDI4ODY0OH0.Ce3jOg9jPrmoxIvOu0O2xZ8IIfEybb7IxJzf7Mza2nA",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNjYzMTIxZjUzMmFmNDZiZDAxYTYiLCJpYXQiOjE3NDA1MzI4ODYsImV4cCI6MTc0MDUzNjQ4Nn0.vPOweKSL3MUGfDFM5tG5bCl2UWnzO8zOK08J8UiiASo",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nameCategory\": \"Deportes\",\r\n    \"namePublication\": \"Domingo merengue\",\r\n    \"descriptionPublication\": \"El madrid tiene que ganar su partido para mantenerse en la pelea por el liderato de la liga\"\r\n}",
+					"raw": "{\r\n    \"nameCategory\": \"Deportes\",\r\n    \"namePublication\": \"clasico\",\r\n    \"descriptionPublication\": \"el mejor partido de todo el domingo\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -114,7 +114,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/GestorOpiniones/v1/publications/67ba9f9e85af83f46c63d97c",
+					"raw": "http://localhost:3002/GestorOpiniones/v1/publications/67be6bbc5b9ec23a713ce5ee",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -124,7 +124,7 @@
 						"GestorOpiniones",
 						"v1",
 						"publications",
-						"67ba9f9e85af83f46c63d97c"
+						"67be6bbc5b9ec23a713ce5ee"
 					]
 				}
 			},

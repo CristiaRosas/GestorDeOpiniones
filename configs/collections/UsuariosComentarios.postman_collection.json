@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Jose\",\r\n    \"surname\": \"Aguilar\",\r\n    \"username\": \"mandril\",\r\n    \"email\": \"mandril@gmail.com\",\r\n    \"password\": \"12345678\"\r\n\r\n}",
+					"raw": "{\r\n    \"name\": \"Kevin\",\r\n    \"surname\": \"Reyes\",\r\n    \"username\": \"Kev\",\r\n    \"email\": \"kev@gmail.com\",\r\n    \"password\": \"12345678\"\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -116,18 +116,18 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/gestorOpiniones/v1/users/passwordUpdate/67ba941561081dde24e6322a",
+					"raw": "http://localhost:3002/GestorOpiniones/v1/users/passwordUpdate/67be663121f532af46bd01a6",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3002",
 					"path": [
-						"gestorOpiniones",
+						"GestorOpiniones",
 						"v1",
 						"users",
 						"passwordUpdate",
-						"67ba941561081dde24e6322a"
+						"67be663121f532af46bd01a6"
 					]
 				}
 			},
@@ -140,7 +140,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Dylan\",\r\n    \"surname\": \"oxcal\",\r\n    \"username\": \"pelo\",\r\n    \"email\": \"pelio@gmail.com\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Jonathan\",\r\n    \"surname\": \"oxcal\",\r\n    \"username\": \"Jonas\",\r\n    \"email\": \"Jpelo@gmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -148,7 +148,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3002/GestorOpiniones/v1/users/67bbdc072760f90bf71a7d3f",
+					"raw": "http://localhost:3002/GestorOpiniones/v1/users/67be65ac54404438dc36db20",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -158,7 +158,7 @@
 						"GestorOpiniones",
 						"v1",
 						"users",
-						"67bbdc072760f90bf71a7d3f"
+						"67be65ac54404438dc36db20"
 					]
 				}
 			},

@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "67be6d905b9ec23a713ce61c"
+  },
+  "keeperPublication": {
+    "$oid": "67be6b615b9ec23a713ce5e6"
+  },
+  "comment": "disminucion de calidad en el hermano mayor de la serie Ultra",
+  "keeperUser": {
+    "$oid": "67be655854404438dc36db13"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-26T01:25:36.663Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:25:36.663Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be6def5b9ec23a713ce626"
+  },
+  "keeperPublication": {
+    "$oid": "67be6bbc5b9ec23a713ce5ee"
+  },
+  "comment": "correcion, el partido es el sabado",
+  "keeperUser": {
+    "$oid": "67be659f54404438dc36db1c"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-26T01:27:11.361Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:27:11.361Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be6eba5b9ec23a713ce63d"
+  },
+  "keeperPublication": {
+    "$oid": "67be6c2d5b9ec23a713ce5fb"
+  },
+  "comment": "el huracan mas duro que golpea el pais en años",
+  "keeperUser": {
+    "$oid": "67be663121f532af46bd01a6"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-26T01:30:34.821Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:31:43.032Z"
+  }
+}]

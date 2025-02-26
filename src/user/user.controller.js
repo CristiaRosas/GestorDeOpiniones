@@ -82,7 +82,7 @@ export const updateUser = async (req, res  = response) => {
     }
 }
 
-export const updatePassword = async (req, res) => {
+export const passwordUpdate = async (req, res) => {
     try {
         const { id } = req.params;
         const { passwordOld, passwordNew } = req.body;

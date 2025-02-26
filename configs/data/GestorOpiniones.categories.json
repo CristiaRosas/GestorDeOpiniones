@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "67be65cc54404438dc36db26"
+  },
+  "nameCategory": "Tecnologia",
+  "descriptionCategory": "Es una categoria sobre Tecnologia",
+  "keeper": {
+    "$oid": "67be655854404438dc36db13"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-26T00:52:28.242Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T00:52:28.242Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be66b621f532af46bd01b2"
+  },
+  "nameCategory": "Deportes",
+  "descriptionCategory": "Es una categoria sobre Deportes",
+  "keeper": {
+    "$oid": "67be663121f532af46bd01a6"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-26T00:56:22.930Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T00:56:22.930Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be66ef21f532af46bd01b9"
+  },
+  "nameCategory": "Clima",
+  "descriptionCategory": "Es una categoria sobre climas",
+  "keeper": {
+    "$oid": "67be659f54404438dc36db1c"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-02-26T00:57:19.586Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:07:39.806Z"
+  }
+}]
